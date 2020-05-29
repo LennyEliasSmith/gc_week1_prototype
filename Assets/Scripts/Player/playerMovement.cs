@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class playerMovement : MonoBehaviour
         if (other.tag == "Enemy")
         {
             Debug.Log("U ded");
-
+            SceneManager.LoadScene(2);
 
         }
 
